@@ -8,7 +8,6 @@
 </head>
 
 <body>
-  <!-- HEADER -->
   <header class="header">
     <nav class="nav">
       <a class="brand" href="#top">MMI</a>
@@ -19,28 +18,54 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
 
+      <div class="nav-icons" aria-label="Réseaux">
+        <a class="icon-link" href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener">
+          <img src="img/Instagram_icon.png" alt="Instagram" />
+        </a>
 
-    <!-- BURGER MOBILE -->
-<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <a class="icon-link" href="https://www.facebook.com/lucas.hentzlanfranchi" aria-label="Facebook" target="_blank" rel="noopener">
+          <img src="img/Facebook_Logo.png" alt="Facebook" />
+        </a>
 
-<label for="menu-toggle" class="hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
-</label>
+        <a class="icon-link" href="https://www.tiktok.com/fr/" aria-label="TikTok" target="_blank" rel="noopener">
+          <img src="img/icone-application-tiktok.avif" alt="TikTok" />
+        </a>
+      </div>
 
-<!-- MENU MOBILE -->
-<nav class="mobile-menu" aria-label="Menu mobile">
-  <div class="mobile-menu-head">
-    <span class="mobile-title">Menu</span>
-    <label for="menu-toggle" class="mobile-close">✕</label>
-  </div>
-</nav>
+      <!-- BURGER MOBILE -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+      <label for="menu-toggle" class="hamburger" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- MENU MOBILE  -->
+      <div class="mobile-menu" aria-label="Menu mobile">
+        <div class="mobile-menu-head">
+          <span class="mobile-title">Menu</span>
+          <label for="menu-toggle" class="mobile-close" aria-label="Fermer">✕</label>
+        </div>
+
         <a href="#accueil">Accueil</a>
         <a href="#projets">Projet</a>
         <a href="#competences">Compétences</a>
         <a href="#contact">Contact</a>
- 
+
+        <div class="mobile-social" aria-label="Réseaux mobile">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="img/Instagram_icon.png" alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/lucas.hentzlanfranchi" target="_blank" rel="noopener" aria-label="Facebook">
+            <img src="img/Facebook_Logo.png" alt="Facebook" />
+          </a>
+          <a href="https://www.tiktok.com/fr/" target="_blank" rel="noopener" aria-label="TikTok">
+            <img src="img/icone-application-tiktok.avif" alt="TikTok" />
+          </a>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <main id="top">
@@ -56,8 +81,9 @@
           </h1>
 
           <div class="hero-actions">
-            <a class="btn btn-dark" href="#competences">Mes compétences <span class="dot">●</span></a>
-            <a class="btn btn-light" href="#contact">Contactez-moi <span class="dot">●</span></a>
+            <a class="btn btn-dark btn-anim" href="#competences">
+  Mes compétences <span class="dot">●</span></a>         
+  <a class="btn btn-light btn-contact-anim" href="#contact">Contactez-moi <span class="dot">●</span></a>
           </div>
         </div>
 
@@ -72,7 +98,7 @@
   <div class="wrap">
     <h2 class="section-title">Mes Projets récents</h2>
 
-    <!-- LISTE DES PROJETS (cliquables) -->
+    <!-- LISTE DES PROJETS -->
     <div class="projects-list">
 
       <a class="card project project-link" href="#modal-p1">
@@ -102,7 +128,7 @@
           <p> afiiche pour aller voir Dracula voir plus…</p>
         </div>
         <div class="project-media">
-          <img src="img\affiche dracula.jpg" alt="Affiche Dracula" />
+          <img src="img/affiche dracula.jpg" alt="Affiche Dracula" />
         </div>
       </a>
 
@@ -207,7 +233,7 @@ Elle donne l'impression d'un parfum puissant, élégant et sophistiqué.
             <img src="img/affiche dracula.jpg" alt="Affiche Dracula" />
           </div>
           <div class="modal-text">
-            <p>TCette affiche de théâtre met en avant la pièce Dracula dans une ambiance sombre, mystérieuse et angoissante.
+            <p>Cette affiche de théâtre met en avant la pièce Dracula dans une ambiance sombre, mystérieuse et angoissante.
 Les couleurs dominantes, principalement le rouge et le noir, rappellent le sang, la nuit et le danger.
 Le rouge peut aussi symboliser la passion et la violence liées au personnage de Dracula.
 La composition centrale attire immédiatement le regard vers le cœur de l'image.
@@ -236,7 +262,7 @@ Elle donne envie d'assister à la pièce pour découvrir cette histoire célèbr
             <img src="img/Mini Chat.png" alt="Mini Chat" />
           </div>
           <div class="modal-text">
-            <p>Ce projet de mini chat est une application web permettant aux utilisateurs d’échanger des messages simplement.
+            <p>Ce projet de mini chat est une application web permettant aux utilisateurs d'échanger des messages simplement.
 L'interface est claire et organisée, ce qui facilite la lecture des conversations.
 Chaque message affiche le pseudo de l'utilisateur, son avatar et l'heure d'envoi.
 L'utilisateur peut personnaliser son profil en choisissant un pseudo, une image et une couleur de texte.
@@ -291,7 +317,7 @@ Elle donne envie de participer au festival et de profiter des concerts proposés
         <div class="skills">
           <div class="skill">
             <div class="skill-ico">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/500px-Adobe_Photoshop_CC_icon.svg.png" alt="Photoshop" />
+              <img src="img/Adobe_Photoshop_CC_icon.svg.png" alt="Photoshop" />
             </div>
             <div class="bar"><span style="width:50%"></span></div>
             <div class="pct">50 %</div>
@@ -299,7 +325,7 @@ Elle donne envie de participer au festival et de profiter des concerts proposés
 
           <div class="skill">
             <div class="skill-ico">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/250px-Adobe_Illustrator_CC_icon.svg.png" alt="Illustrator" />
+              <img src="img/Adobe_Illustrator_CC_icon.svg.png" alt="Illustrator" />
             </div>
             <div class="bar"><span style="width:70%"></span></div>
             <div class="pct">70 %</div>
@@ -307,7 +333,7 @@ Elle donne envie de participer au festival et de profiter des concerts proposés
 
           <div class="skill">
             <div class="skill-ico">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png" alt="VS Code" />
+              <img src="img/Visual_Studio_Code_1.35_icon.svg.png" alt="VS Code" />
             </div>
             <div class="bar"><span style="width:75%"></span></div>
             <div class="pct">75 %</div>
@@ -315,7 +341,7 @@ Elle donne envie de participer au festival et de profiter des concerts proposés
 
           <div class="skill">
             <div class="skill-ico">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHVIL5HpOsOFQWomhpmB5b8lTVQ9rIVnV9fg&s" alt="Figma" />
+              <img src="img/images figma.png" alt="Figma" />
             </div>
             <div class="bar"><span style="width:40%"></span></div>
             <div class="pct">40 %</div>
